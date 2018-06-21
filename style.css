@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  background: #92bde7;
+  color: #485e74;
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1em; }
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em; }
+  .container ul {
+    list-style: none;
+    padding: 0; }
+  .container .brand {
+    text-align: center;
+    color: #fff; }
+  .container .wrapper {
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7); }
+    .container .wrapper > * {
+      padding: 1em; }
+    .container .wrapper .my-info {
+      background: #c9e6ff; }
+      .container .wrapper .my-info h3, .container .wrapper .my-info ul {
+        text-align: center;
+        margin: 0 0 1rem 0; }
+    .container .wrapper .contact {
+      background: #f9feff; }
+      .container .wrapper .contact form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px; }
+        .container .wrapper .contact form label {
+          display: block; }
+        .container .wrapper .contact form p {
+          margin: 0; }
+        .container .wrapper .contact form .full {
+          grid-column: 1/3; }
+        .container .wrapper .contact form button, .container .wrapper .contact form input, .container .wrapper .contact form textarea {
+          width: 100%;
+          padding: 1em; }
+        .container .wrapper .contact form button {
+          background: #c9e6ff;
+          border: 0;
+          border-radius: 2px;
+          text-transform: uppercase; }
+        .container .wrapper .contact form button:hover, .container .wrapper .contact form button:focus {
+          background: #92bde7;
+          transition: background-color 500ms ease-out; }
+
+/* Responsive Design for Large Screens */
+@media(min-width: 700px) {
+  .container h1.brand {
+    font-size: 25px;
+    margin-bottom: 150px;
+    text-align: left; }
+  .container .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr; }
+    .container .wrapper > * {
+      padding: 2em; }
+    .container .wrapper .my-info h3, .container .wrapper .my-info ul {
+      text-align: left; }
+    .container .wrapper .my-info ul {
+      font-size: 0.9rem; } }
+
+/*# sourceMappingURL=style.css.map */
